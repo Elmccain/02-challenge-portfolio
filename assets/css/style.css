@@ -1,6 +1,7 @@
 /* add global properies and CSS variables */
 :root {
-    --primary-color: 
+    --primary-color: #ffffff;
+    --secondary-color: #1f92a1;
 
 }
 /*over ride browser defaults */
@@ -31,13 +32,13 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #ff1493;
+    color: var(--secondary-color);
     margin: 0;
 }
 /* apply color and remove hypertext to <a> */
 header a {
     text-decoration: none;
-    color: #ff1493
+    color: var(--secondary-color)
 }
 header nav {
     margin: 7px 0;
@@ -63,7 +64,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: #ffffff;
+    color: var(--primary-color);
     line-height: 1.5;
     font-size: 10px;
 }
@@ -75,7 +76,7 @@ footer {
     flex-direction: column;
 }
 .about-me {
-    color:#ffffff;
+    color: var(--primary-color);
     margin: 20px;
     font-size: 26px;
     text-align: center;
@@ -94,8 +95,13 @@ footer {
     margin-right: auto;
 }
 /* Style Projects section */
-#projects h3 {
+#projects h2, #contact h2 {
     font-size: 40px;
+    color: #1f92a1;
+    font-style: italic;
+}
+#projects h3 {
+    font-size: 30px;
     text-align: center;
     text-decoration: underline;
     margin-bottom: 10px;
@@ -107,4 +113,23 @@ footer {
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+.other-projects {
+    display:flex;
+}
+.other-projects img {
+    border-radius: 50%;
+    width: 70%;
+    height: auto;
+    vertical-align: middle;
+}
+.project-title {
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+    flex-wrap: wrap;
+}
+/*contact style */
+#contact {
+    display: flex;
 }
