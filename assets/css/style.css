@@ -100,6 +100,9 @@ footer {
     color: #1f92a1;
     font-style: italic;
 }
+#projects {
+    padding: auto;
+}
 #projects h3 {
     font-size: 30px;
     text-align: center;
@@ -116,6 +119,9 @@ footer {
 }
 .other-projects {
     display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px;
 }
 .other-projects img {
     border-radius: 50%;
@@ -128,8 +134,14 @@ footer {
     text-decoration: underline;
     text-align: center;
     flex-wrap: wrap;
+    align-items: baseline;
 }
 /*contact style */
 #contact {
     display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#contact-me form {
+    background-color: blueviolet;
 }
