@@ -26,6 +26,8 @@ header {
   /*makes the header sticky for everything else */
   position: sticky;
   top: 0;
+  z-index: 9999;
+  background-color: rgba 0, 0, 0, 0.9 ;
 }
 header h1 {
   font-weight: bold;
@@ -119,16 +121,21 @@ footer {
   align-items: center;
   justify-content: space-around;
   margin: 40px 40px 40px 85px;
+
 }
 .column {
-    flex: 50%;
+    flex: 1; 
+    margin: 20px;
     justify-content: center;
 }
 .other-projects img {
   border-radius: 50%;
   width: 70%;
-  height: auto;
-  vertical-align: middle;
+
+}
+.column div {
+  align-items: center;
+  width: 60%;
 }
 .project-title {
  flex-direction:column;
@@ -139,15 +146,16 @@ footer {
   justify-content: center;
   margin: 20px;
   padding: auto;
+  line-height: 1.7;
 }
 .p1 {
-    font-size: 4em;
+    font-size: 25px;
 }
 .p2 {
-    font-size: 2em;
+    font-size: 18px;
     text-align: center;
 }
 #contact-me address {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 15px;
 }
