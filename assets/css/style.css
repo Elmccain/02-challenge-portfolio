@@ -137,9 +137,6 @@ footer {
   align-items: center;
   width: 60%;
 }
-.project-title {
- flex-direction:column;
-}
 /*contact style */
 #contact-me {
   display: flex;
@@ -158,4 +155,42 @@ footer {
 #contact-me address {
     text-align: center;
     font-size: 15px;
+}
+/*Media query for smaller desktop screens and smaller */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 25px;
+  }
+  .about-me {
+    font-size: 20px;
+
+  }
+  .about-me span {
+    font-size: 25px;
+  }
+  #projects h2, #contact h2 {
+    font-size: 30px;
+  }
+  #projects h3 {
+    font-size: 22px;
+  }
+  .p1, .p2, .contact-me address  {
+    font-size: 19px;
+  }
+}
+
+/*Media query for mobile phones and smaller */
+@media screen and (max-width: 575px) {
+  .hero img {
+    width: 50%;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  .other-projects img {
+    width: 90%;
+  }
+  .column div {
+    width: 76%;
+  }
 }
