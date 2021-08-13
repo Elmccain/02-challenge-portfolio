@@ -1,96 +1,89 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Liz McCain Portfolio</title>
-        <link rel="stylesheet" href="./assets/css/style.css"/>
-    </head>
-    <body>
-        <!--Header with Nav -->
-        <header>
-            <h1>
-                <a href="/">Portfolio</a>
-            </h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav> 
-        </header>
-        <!--hero-->
-        <section id="about-me" class="hero">
-            <img src="./assets/dino_liz.jpg" alt="Liz in a dinosaur helmet">
-            <div class="about-me">
-                <p>
-                    I am <span>Liz McCain.</span> I am an aspiring web developer. My specialties are to be determined. 
-                </p>
-            </div>    
-        </section>
-        <!--Projects-->
-        <section id="projects">
-            <h2>Projects</h2>
-            <article class="main-project">
-                <h3>Run Buddy</h3>
-                <a href="https://elmccain.github.io/run-buddy/">
-                <img src="./assets/run-buddy.png" alt="screenshot of a webpage for a personal trainer website"/>
-                </a>
-            </article>
-            <div class="other-projects">
-                <article class="other-projects">
-                    <a href="placehoder.com">
-                    <img src="./assets/dont_panic.png" alt="a dog taking a nap"/>
-                    </a>
-                    <div class="project-title">
-                        <h3>Something Cool</h3>
-                    </div>
-                </article>
-                <article class="other-projects">
-                    <a href="placeholder/com">
-                    <img src="./assets/Pizza.png" alt="Colorful outer space"/>
-                    </a>
-                    <div class="project-title">
-                        <h3 class="project-title">Something Else Cool</h3>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <section id="contact">
-            <div class="section-start">
-                <h2>Contact</h2>
-            </div>
-            <div id="contact-me">
-                <h3>Interested in working with me?</h3>
-                <p>
-                    Reach out. We can create great things. 
-                </p>
-                <address>
-                    P. 402-415-4499
-                    E. <a href="mailto:mccain442@gmail.com">mcccain442@gmail.com</a>
-                </address>
-                <form>
-                    <label for="contact-name">Your Name</label>
-                    <input type="text" id="contact-name" placeholder="Your Name"/>
+<!DOCTYPE html>
+<html lang="en">
 
-                    <label for="contact-message">Message</label>
-                    <textarea id="contact-message" placeholder="Message"></textarea>
-                    <button type="submit">Submit</button>
-                </form>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liz McCain Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!--Header with Nav -->
+    <header>
+        <h1>
+            <a href="/">Portfolio</a>
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--hero-->
+    <section id="about-me" class="hero">
+        <img src="./assets/dino_liz.jpg" alt="Liz in a dinosaur helmet">
+        <div class="about-me">
+            <p>
+                I am <span>Liz McCain.</span> I am an aspiring web developer. My specialties are to be determined.
+            </p>
+        </div>
+    </section>
+    <!--Projects-->
+    <section id="projects">
+        <h2>Projects</h2>
+        <article class="main-project">
+            <h3>Run Buddy</h3>
+            <a href="https://elmccain.github.io/run-buddy/">
+                <img src="./assets/run-buddy.png" alt="screenshot of a webpage for a personal trainer website" />
+            </a>
+        </article>
+        <div class="other-projects">
+            <article class="column">
+                <a href="placehoder.com">
+                    <img src="./assets/dont_panic.png" alt="a dog taking a nap" />
+                </a>
+                <div class="project-title">
+                    <h3>Something Cool</h3>
+                </div>
+            </article>
+            <article class="column">
+                <a href="placeholder/com">
+                    <img src="./assets/Pizza.png" alt="Colorful outer space" />
+                </a>
+                <div class="project-title">
+                    <h3>Something Else Cool</h3>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <div id="contact-me">
+            <div>
+            <p class="p1">Interested in working with me?</p>
+            <p class="p2">Reach out. We can create great things.</p>
+            <address>
+                P. 402-415-4499
+                E. <a href="mailto:mccain442@gmail.com">mcccain442@gmail.com</a>
+            </address>
             </div>
-        </section>  
-        
-        <!--Footer-->
-        <footer>
-            <h2> &copy;2021 Liz McCain. All rights reserved.</h2>
-        </footer>
-    </body>
-    </html>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <h2> &copy;2021 Liz McCain. All rights reserved.</h2>
+    </footer>
+</body>
+
+</html>

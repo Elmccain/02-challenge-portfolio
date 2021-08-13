@@ -1,147 +1,153 @@
 /* add global properies and CSS variables */
 :root {
-    --primary-color: #ffffff;
-    --secondary-color: #1f92a1;
-
+  --primary-color: #ffffff;
+  --secondary-color: #1f92a1;
 }
 /*over ride browser defaults */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* body style */
 body {
-    background-color: #000000;
-    color: #ffffff;
-    font-family: 'Times New Roman', Times, serif;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
 }
 /* apply styles to header */
 header {
-    padding: 20px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
-    /*allows safari to hve a sticky header */
-    position: -webkit-sticky;
-    /*makes the header sticky for everything else */
-    position: sticky;
-    top: 0;
-    
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /*allows safari to hve a sticky header */
+  position: -webkit-sticky;
+  /*makes the header sticky for everything else */
+  position: sticky;
+  top: 0;
 }
 header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: var(--secondary-color);
-    margin: 0;
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--secondary-color);
+  margin: 0;
 }
 /* apply color and remove hypertext to <a> */
 header a {
-    text-decoration: none;
-    color: var(--secondary-color)
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 header nav {
-    margin: 7px 0;
+  margin: 7px 0;
 }
 /*change orientation of the li */
 header nav ul {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 /* margins weight size and weight to nav li a */
 header nav ul li a {
-    padding: 10px;
-    font-weight: lighter;
-    font-size: 1.55vw;
+  padding: 10px;
+  font-weight: lighter;
+  font-size: 1.55vw;
 }
 /* put some shoes on this bitch */
 footer {
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    color: var(--primary-color);
-    line-height: 1.5;
-    font-size: 10px;
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: var(--primary-color);
+  line-height: 1.5;
+  font-size: .6250em;
 }
 .hero {
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: column;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
 }
 .about-me {
-    color: var(--primary-color);
-    margin: 20px;
-    font-size: 26px;
-    text-align: center;
-    
+  color: var(--primary-color);
+  margin: 20px;
+  font-size: 1.5625em;
+  text-align: center;
 }
 .about-me span {
-    font-size: 30px;
-    color: #ff1493;
+  font-size: 30px;
+  color: #ff1493;
 }
 .hero img {
-    width: 30%;
-    padding: 20px;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 30%;
+  padding: 20px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Style Projects section */
-#projects h2, #contact h2 {
-    font-size: 40px;
-    color: #1f92a1;
-    font-style: italic;
-}
+#projects h2,
+#contact h2 {
+  font-size: 40px;
+  color: #1f92a1;
+  font-style: italic;
+} 
 #projects {
-    padding: auto;
+  padding: auto;
 }
 #projects h3 {
-    font-size: 30px;
-    text-align: center;
-    text-decoration: underline;
-    margin-bottom: 10px;
-
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 10px;
 }
 .main-project img {
-    width:60%;
-    border-radius: 50%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+  width: 60%;
+  border-radius: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 .other-projects {
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40px 40px 40px 85px;
+}
+.column {
+    flex: 50%;
+    justify-content: center;
 }
 .other-projects img {
-    border-radius: 50%;
-    width: 70%;
-    height: auto;
-    vertical-align: middle;
+  border-radius: 50%;
+  width: 70%;
+  height: auto;
+  vertical-align: middle;
 }
 .project-title {
-    font-size: 20px;
-    text-decoration: underline;
-    text-align: center;
-    flex-wrap: wrap;
-    align-items: baseline;
+ flex-direction:column;
 }
 /*contact style */
-#contact {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
+#contact-me {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: auto;
 }
-#contact-me form {
-    background-color: blueviolet;
+.p1 {
+    font-size: 4em;
+}
+.p2 {
+    font-size: 2em;
+    text-align: center;
+}
+#contact-me address {
+    text-align: center;
+    font-size: 1.5em;
 }
